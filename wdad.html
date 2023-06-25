@@ -5,32 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script>
-      var image = document.getElementById("image");
-      var text = document.getElementById("text");
-      var button = document.getElementById("button");
-
-      button.addEventListener("click", function () {
-        // 切换图片
-        if (image.src.endsWith("image1.jpg")) {
-          image.src = "image2.jpg";
-          image.alt = "Image 2";
-          text.textContent = "这是文本内容2";
-        } else {
-          image.src = "image1.jpg";
-          image.alt = "Image 1";
-          text.textContent = "这是文本内容1";
-        }
-      });
-    </script>
+    
     <style>
       #content {
         text-align: center;
       }
 
       #image {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
       }
 
       #text {
@@ -47,11 +30,11 @@
   <body>
     <div>
       <div id="content">
-        <img id="image" src="assets\tp1.jpg" alt="Image 1" />
-        <p id="text">生如芥子，心藏须弥</p>
+        <img id="image" src="" alt="">
+        <p id="text"></p>
+          <script src="assets\js\qh.js"></script>
       </div>
-      <button id="button">切换</button>
-      <video src="起风了 - 周深.mp3" autoplay hidden></video>
+      <video src="assets\起风了 - 周深.mp3" autoplay hidden></video>
     </div>
   </body>
 </html>
